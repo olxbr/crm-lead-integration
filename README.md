@@ -1,6 +1,6 @@
-# Integração de Leads VivaReal Versão 1.0
+# Integração de Leads Viva Real Versão 1.0
 
-Este documento descreve a forma de integração de leads que o VivaReal está disponibilizando para nossos clientes de forma que eles possam receber os leads enviados pelos usuários do portal diretamente em seus sistemas.
+Este documento descreve a forma de integração de leads que o Viva Real está disponibilizando para nossos clientes de forma que eles possam receber os leads enviados pelos usuários do portal diretamente em seus sistemas.
 
 Endpoint
 
@@ -38,10 +38,10 @@ O payload será enviado no corpo do request através do método POST do protocol
 
 Onde:
 
-- **leadOrigin**: Identificador do emissor do lead (VivaReal);
+- **leadOrigin**: Identificador do emissor do lead (Real);
 - **timestamp**: Data e horário da criação do lead no formato ISO_LOCAL_DATE_TIME;
-- **originLeadId**: Identificador do lead no VivaReal;
-- **originListingId**: Identificador do imóvel no VivaReal;
+- **originLeadId**: Identificador do lead no Viva Real;
+- **originListingId**: Identificador do imóvel no Viva Real;
 - **clientListingId**: Identificador do anúncio para o anunciante;
 - **name**: Nome do consumidor que gerou o lead;
 - **email**: E-Mail do consumidor que gerou o lead;
@@ -79,7 +79,7 @@ A **SECRET-KEY** poderá ser solicitada para nossa equipe na adesão da integra�
 Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpStatusCode 401
 
 ### Testes
-Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:renato.cairo@vivareal.com">renato.cairo@vivareal.com</a></p>
+Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:renato.cairo@gzvr.com.br">renato.cairo@gzvr.com.br</a></p>
 
 ### Dúvidas Sugestões ou Problemas
 Caso tenha alguma dúvida, sugestão ou problemas durante a implementação da integração de Leads, abra um [Issue](https://github.com/VivaReal/crm-lead-integration/issues) neste repositório que iremos responder assim que possível.
