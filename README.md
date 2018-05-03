@@ -1,4 +1,4 @@
-# Integração de Leads Viva Real Versão 1.0
+# Integração de Leads Viva Real Versão 1.1
 
 Este documento descreve a forma de integração de leads que o Viva Real está disponibilizando para nossos clientes de forma que eles possam receber os leads enviados pelos usuários do portal diretamente em seus sistemas.
 
@@ -63,6 +63,9 @@ O processo de integração será acionado para cada lead individualmente, sempre
 Caso o endpoint do cliente retorne qualquer código de status que não os da família 200, haverá retentativa automática no envio do lead. O reenvio será tentado por 6 vezes em intervalos de 30 minutos e após isso ele será armazenado temporariamente por até 14 dias, podendo ser reenviado a pedido do cliente.
 
 O controle do status de recebimento dos leads será feito exclusivamente através dos códigos de status do protocolo HTTP, qualquer informação enviada no corpo da resposta será totalmente ignorada.
+
+### Timeout
+A requisição POST para o endpoint está configurada com timeout de 5 segundos, ou seja, qualquer requisição que demorar mais que 5 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de tentativas.
 
 ### Segurança
 
