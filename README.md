@@ -65,7 +65,7 @@ Caso o endpoint do cliente retorne qualquer código de status que não os da fam
 O controle do status de recebimento dos leads será feito exclusivamente através dos códigos de status do protocolo HTTP, qualquer informação enviada no corpo da resposta será totalmente ignorada.
 
 ### Timeout
-A requisição POST para o endpoint está configurada com timeout de 5 segundos, ou seja, qualquer requisição que demorar mais que 5 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de tentativas.
+A requisição POST para o endpoint está configurada com timeout de 5 segundos, ou seja, qualquer requisição que demorar mais que 5 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de retentativas.
 
 ### Segurança
 
