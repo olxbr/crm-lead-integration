@@ -82,7 +82,7 @@ A **SECRET-KEY** poderá ser solicitada para nossa equipe na adesão da integra�
 Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpStatusCode 401
 
 ### Testes
-Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:renato.cairo@gzvr.com.br">renato.cairo@gzvr.com.br</a></p>
+Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:audrey.ferreira@grupozap.com">audrey.ferreira@grupozap.com</a></p>
 
 ### Dúvidas Sugestões ou Problemas
 Caso tenha alguma dúvida, sugestão ou problemas durante a implementação da integração de Leads, abra um [Issue](https://github.com/VivaReal/crm-lead-integration/issues) neste repositório que iremos responder assim que possível.
