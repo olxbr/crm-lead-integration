@@ -47,7 +47,7 @@ Onde:
 - **email**: E-Mail do consumidor que gerou o lead;
 - **ddd**: DDD do telefone do consumidor que gerou o lead;
 - **phone**: Telefone do consumidor que gerou o lead;
-- **phoneNumber**: [deprecado] Telefone do consumidor que gerou o lead (DDD + AREA + Phone);
+- **phoneNumber**: [deprecado] Telefone do consumidor que gerou o lead (DDD + Phone);
 - **message**: Mensagem do consumidor que gerou o lead;
 
 ### Obs:
