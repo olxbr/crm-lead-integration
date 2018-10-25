@@ -73,8 +73,10 @@ Onde:
 
 #### leadOrigin
 Interprete este campo para fazer a distinção do portal onde o lead foi gerado, os valores são:
+
 - `Zap`: Lead gerado no portal https://zapimoveis.com.br
 - `VivaReal`: Lead gerado no portal https://vivareal.com.br
+
 Ou seja, não será necessário criar 2 endpoints individualmente para cada portal, somente interprete o campo `leadOrigin` e faça a distribuição do lead a partir do portal específico.
 
 #### clientListingId
