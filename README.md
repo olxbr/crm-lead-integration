@@ -5,24 +5,24 @@ Basicamente nosso sistema de integração de leads precisa de uma URL (Endpoint)
 
 Endpoint:
 
-https://yourdomain.com.br/lead/ID-DO-ANUNCIANTE
+https://yourdomain.com.br/grupozap/lead/ID-DO-ANUNCIANTE
 
 Ex:
-https://crm-ou-imobiliaria.com.br/lead/123456
+https://crm-ou-imobiliaria.com.br/grupozap/lead/123456
 
 OU
 
-https://ID-DO-ANUNCIANTE.yourdomain.com.br/lead
+https://ID-DO-ANUNCIANTE.yourdomain.com.br/grupozap/lead
 
 Ex:
-https://imobiliariaxpto.crm.com.br/lead
+https://imobiliariaxpto.crm.com.br/grupozap/lead
 
 ID-DO-ANUNCIANTE é parte da URL que representa o identificador do anunciante no sistema que irá receber a requisição. É uma forma de identificação do cliente xpto no Software/CRM.
 
 Caso não tenha ou não queira especificar o ID-DO-ANUNCIANTE o endpoint poderá ser implementado sem este identificador
 
 Ex: 
-https://yourdomain.com.br/lead
+https://yourdomain.com.br/grupozap/lead
 
 Utilizando um único endpoint, o Software/CRM deverá identificar o cliente pelo `clientListingId` mais detalhes abaixo neste manual:
 
