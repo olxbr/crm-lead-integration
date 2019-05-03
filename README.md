@@ -101,6 +101,10 @@ Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpSt
 ### Testes
 Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
+### Arquivo de Importação de Anunciantes
+Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `cpf/cnpj`,`email_da_conta`,`nome_fantasia`,`url_de_integracao`
+Enviar em anexo o arquivo csv para o e-mail: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
+
 ### Dúvidas Sugestões ou Problemas
 Caso tenha alguma dúvida, sugestão ou problemas durante a implementação da integração de Leads, abra um [Issue](https://github.com/grupozap/crm-lead-integration/issues) neste repositório que iremos responder assim que possível.
 
