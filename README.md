@@ -1,4 +1,4 @@
-# Integração de Leads GrupoZap Versão 2.0
+# Integração de Leads GrupoZap Versão 2.1
 
 Estamos disponibilizando neste repositório o manual de Integração de Leads do Grupo Zap. Este documento contém as informações básicas para os Softwares/CRM realizarem as integracões com nosso sistema afim de receber os leads gerados nos portais do GrupoZap (VivaReal e ZapImoveis).
 Basicamente nosso sistema de integração de leads precisa de uma URL (Endpoint) para enviar as informações do lead para os softwares homologados, esta requisição será realizada via protocolo HTTP no verbo POST no Endpoint especificado passando um JSON como corpo do request. Abaixo exemplos de endpoints que poderão ser utilizados: 
@@ -102,7 +102,15 @@ Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpSt
 Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
 ### Arquivo de Importação de Anunciantes
-Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `cpf/cnpj`,`email_da_conta`,`nome_fantasia`,`url_de_integracao`
+Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`EMAIL`,`NAME`,`URL`,`EMAIL_ERROR`,`SEND_LEAD_EMAIL`
+
+- **DOCUMENT:** CPF ou CNPJ do cliente **sem máscara/formatação** [text];
+- **EMAIL:** E-mail do cliente [text];
+- **NAME:** Nome do cliente [text];
+- **URL:** Url de integração do cliente [text];
+- **EMAIL_ERROR:** E-mail para receber os erros de integração (Equipe Técnica) [text];
+- **SEND_LEAD_EMAIL:** Flag para configurar se o lead também será enviado por e-mail [boolean];
+
 Enviar em anexo o arquivo csv para o e-mail: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
 ### Dúvidas Sugestões ou Problemas
