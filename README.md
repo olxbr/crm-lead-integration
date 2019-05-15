@@ -112,8 +112,8 @@ Após homologação da Integração de Leads, enviar todos os clientes em um arq
 #### Exemplo:
 ```
 DOCUMENT,ORIGIN,URL,SEND_LEAD_EMAIL
-56921485000100,VIVAREAL,https://crm.com.br/1/lead,false
-56921485000100,ZAP,https://crm.com.br/1/lead,false
+56921485000100,VIVAREAL,https://crm.com.br/lead,false
+56921485000100,ZAP,https://crm.com.br/lead,false
 ```
 Enviar em anexo o arquivo csv para o e-mail: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
