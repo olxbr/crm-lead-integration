@@ -101,8 +101,8 @@ Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpSt
 ### Testes
 Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
-### Arquivo de Importação de Anunciantes
-Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`EMAIL`,`NAME`,`URL`,`EMAIL_ERROR`,`SEND_LEAD_EMAIL`
+### Arquivo de Importação de Anunciantes em Lote
+Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`ORIGIN`,`URL`,`SEND_LEAD_EMAIL`
 
 - **DOCUMENT:** CPF ou CNPJ do cliente **sem máscara/formatação** [text];
 - **ORIGIN:** Portal que será configurado a integração. Permitido valores: VIVAREAL ou ZAP [text];
