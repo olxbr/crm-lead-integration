@@ -105,12 +105,16 @@ Assim que as implementações forem devidamente realizadas e estiver pronto para
 Após homologação da Integração de Leads, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`EMAIL`,`NAME`,`URL`,`EMAIL_ERROR`,`SEND_LEAD_EMAIL`
 
 - **DOCUMENT:** CPF ou CNPJ do cliente **sem máscara/formatação** [text];
-- **EMAIL:** E-mail do cliente [text];
-- **NAME:** Nome do cliente [text];
+- **ORIGIN:** Portal que será configurado a integração. Permitido valores: VIVAREAL ou ZAP [text];
 - **URL:** Url de integração do cliente [text];
-- **EMAIL_ERROR:** E-mail para receber os erros de integração (Equipe Técnica) [text];
 - **SEND_LEAD_EMAIL:** Flag para configurar se o lead também será enviado por e-mail [boolean];
 
+#### Exemplo:
+```
+DOCUMENT,ORIGIN,URL,SEND_LEAD_EMAIL
+56921485000100,VIVAREAL,https://crm.com.br/1/lead,false
+56921485000100,ZAP,https://crm.com.br/1/lead,false
+```
 Enviar em anexo o arquivo csv para o e-mail: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
 ### Dúvidas Sugestões ou Problemas
