@@ -88,15 +88,11 @@ A requisição POST para o endpoint está configurada com timeout de 5 segundos,
 ### Segurança
 Para verificar a confiabilidade do emissor das requisições, será enviado no Header uma chave de segurança no padrão [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). A chave a ser verificada será no seguinte formato:
 
+Exemplo:
 ```
-Authorization: Basic dml2YXJlYWw6U0VDVVJJVFktS0VZ
-Decodifique a chave dml2YXJlYWw6U0VDVVJJVFktS0VZ com Base64 terá o valor
-vivareal:SECRET-KEY
-Valide a SECRET-KEY
+Authorization: Basic ***REMOVED***
 ```
-
-A **SECRET-KEY** poderá ser solicitada para nossa equipe na adesão da integração.
-Caso a SECRET-KEY não coincida com a chave que enviamos deverá retornar httpStatusCode 401
+Para saber mais de como implementar a segurança [acesse aqui](https://github.com/grupozap/crm-lead-integration/wiki/Como-Validar-Segurança-SECRET_KEY).
 
 ### Testes
 Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
