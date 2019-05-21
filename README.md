@@ -92,7 +92,7 @@ Exemplo:
 ```
 Authorization: Basic dml2YXJlYWw6NTk0RjgwM0IzODBBNDEzOTZFRDYzRENBMzk1MDM1NDI=
 ```
-Para saber mais de como implementar a segurança [acesse aqui](https://github.com/grupozap/crm-lead-integration/wiki/Como-Validar-Segurança-SECRET_KEY).
+Para saber mais sobre como implementar a segurança [acesse a wiki](https://github.com/grupozap/crm-lead-integration/wiki/Como-Validar-Segurança-SECRET_KEY).
 
 ### Testes
 Assim que as implementações forem devidamente realizadas e estiver pronto para iniciar os testes, entre em contato com: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
