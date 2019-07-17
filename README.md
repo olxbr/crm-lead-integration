@@ -1,6 +1,6 @@
 # Integração de Leads Grupo ZAP
 
-Estamos disponibilizando neste repositório o manual de Integração de Leads do Grupo ZAP. Este documento contém as informações básicas para os Softwares/CRM realizarem as integracões com nossa API.
+Estamos disponibilizando neste repositório o manual de Integração de Leads do Grupo ZAP. Este documento contém as informações básicas para os Softwares/CRM realizarem as integrações com nossa API, e o anunciante poder receber os seus contatos(leads) em sua ferramenta.
 
 Basicamente nosso sistema de integração de leads precisa de uma URL (Endpoint) para enviar as informações do lead para os softwares homologados. Esta requisição será realizada via protocolo HTTP no verbo POST no Endpoint especificado passando um JSON como corpo do request. Abaixo exemplos de endpoints que poderão ser utilizados: 
 
