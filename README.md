@@ -1,4 +1,4 @@
-# Integração de Leads Grupo Zap
+# Integração de Leads Grupo ZAP
 
 Estamos disponibilizando neste repositório o manual de Integração de Leads do Grupo Zap. Este documento contém as informações básicas para os Softwares/CRM realizarem as integracões com nosso sistema afim de receber os leads gerados nos portais do GrupoZap (VivaReal e ZapImoveis).
 Basicamente nosso sistema de integração de leads precisa de uma URL (Endpoint) para enviar as informações do lead para os softwares homologados, esta requisição será realizada via protocolo HTTP no verbo POST no Endpoint especificado passando um JSON como corpo do request. Abaixo exemplos de endpoints que poderão ser utilizados: 
