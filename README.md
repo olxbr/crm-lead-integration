@@ -96,19 +96,17 @@ Assim que as implementações forem realizadas, envie as seguintes informações
  <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
 ### Arquivo de Importação de Anunciantes em Lote
-Após homologação da Integração de Leads e todo processo estiver finalizado, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`CONTRACT`,`URL`,`SEND_LEAD_EMAIL`
+Após homologação da Integração de Leads e todo processo estiver finalizado, enviar todos os clientes em um arquivo CSV contendo os seguintes campos: `DOCUMENT`,`URL`,`SEND_LEAD_EMAIL`
 
 - **DOCUMENT:** CPF ou CNPJ do cliente **sem máscara/formatação** [text];
-- **CONTRACT:** Contrato que será configurado a integração. Permitido valores: VIVAREAL, ZAP ou GRUPOZAP [text];
 - **URL:** Url de integração do cliente [text];
 - **SEND_LEAD_EMAIL:** Flag para configurar se o lead também será enviado por e-mail [boolean];
 
 #### Exemplo:
 ```
-DOCUMENT,CONTRACT,URL,SEND_LEAD_EMAIL
-56921485000100,VIVAREAL,https://crm.com.br/lead,false
-24656485000100,ZAP,https://crm.com.br/lead,false
-78920485000100,GRUPOZAP,https://crm.com.br/lead,false
+DOCUMENT,URL,SEND_LEAD_EMAIL
+56921485000100,https://crm.com.br/lead,false
+
 ```
 Enviar em anexo o arquivo csv para o e-mail: <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
