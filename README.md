@@ -76,6 +76,9 @@ Onde:
 #### clientListingId
 O campo `clientListingId` é único identificador do anúncio/empreendimento conhecido pelo Software/CRM e GrupoZap, este identificador chega até nós via carga Feeds como codigo externo (externalId) ou customizado diretamente nos Software/CRM pelo cliente. Considere este identificador para realizar a devida associação do lead com o anúncio/empreendimento do cliente. Caso este identificador não estiver contído na requisição, deverá retornar o statusCode da família 400 (4xx) para ser analisado e reprocessado futuramente.
 
+### Integração Inexistente
+Quando um cliente deixa de usar um CRM que tem integração de leads ativa com o Grupo Zap, CRM poderá retornar `StatusCode=404` na resposta da integração, desta forma, nosso sistema irá identificar integrações inexistentes e remover de nossos cadastros evitanto futuras requisições.
+
 ### Timeout
 A requisição POST para o endpoint está configurada com timeout de 5 segundos, ou seja, qualquer requisição que demorar mais que 5 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de retentativas.
 
