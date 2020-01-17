@@ -91,10 +91,11 @@ Authorization: Basic dml2YXJlYWw6NTk0RjgwM0IzODBBNDEzOTZFRDYzRENBMzk1MDM1NDI=
 ```
 Para saber mais sobre como implementar a segurança [acesse a wiki](https://github.com/grupozap/crm-lead-integration/wiki/Como-Validar-Segurança-SECRET_KEY).
 
-### Testes
+### Homologação
 Assim que as implementações forem realizadas, envie as seguintes informações para o e-mail abaixo: 
 - Enpoint implementado
 - Nome do CRM Integrador
+- `clientListingId` que será utilizado na homologação
 - E-mail para cadastro e envio dos erros da integração de leads
  <p><a href="mailto:integracaoleads@grupozap.com">integracaoleads@grupozap.com</a></p>
 
