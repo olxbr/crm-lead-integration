@@ -41,7 +41,7 @@ O controle do status de recebimento dos leads será feito exclusivamente atravé
 Qualquer informação enviada no corpo da resposta será totalmente ignorada!
 
 Contrato JSON:
-```
+```json
 {
   "leadOrigin": "VivaReal",
   "timestamp": "2017-10-23T15:50:30.619Z",
@@ -53,7 +53,7 @@ Contrato JSON:
   "ddd": "11",
   "phone": "999999999",
   "phoneNumber": "11999999999",
-  "message": Olá, tenho interesse neste imóvel. Aguardo o contato. Obrigado.",
+  "message": "Olá, tenho interesse neste imóvel. Aguardo o contato. Obrigado."
 }
 ```
 
