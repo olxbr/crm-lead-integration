@@ -35,7 +35,7 @@ O processo de integração será acionado para cada lead individualmente sempre 
 2xx: indica que o Software/CRM recebeu o lead com sucesso e que ações adicionais não são necessárias. Qualquer código de status da família 200 terá esse efeito.
 3xx, 4xx ou 5xx: indica que houve falha no processamento do lead por parte do Software/CRM.
 
-Caso o endpoint do Software/CRM retorne qualquer código de status que não são da família 200, haverá retentativa automática no envio do lead. O reenvio será tentado por 5 vezes em intervalos de 10 minutos, e após isso ele será armazenado temporariamente por até 14 dias, podendo ser reenviado a pedido do Software/CRM.
+Caso o endpoint do Software/CRM retorne qualquer código de status que não são da família 200, haverá retentativa automática no envio do lead. O reenvio será executado por 3 vezes e, caso não haja sucesso, ele será armazenado temporariamente por até 14 dias, podendo ser reenviado a pedido do Software/CRM.
 
 O controle do status de recebimento dos leads será feito exclusivamente através dos códigos de status do protocolo HTTP. 
 Qualquer informação enviada no corpo da resposta será totalmente ignorada!
@@ -63,7 +63,7 @@ Onde:
 - **timestamp**: Data e horário da criação do lead no formato ISO_LOCAL_DATE_TIME;
 - **originLeadId**: Identificador do lead do GrupoZap;
 - **originListingId**: Identificador do anúncio do GrupoZap;
-- **clientListingId**: Identificador do anúncio para o anunciante (ExternalId);
+- **clientListingId**: Identificador do anúncio para o anunciante (ListingId);
 - **name**: Nome do consumidor que gerou o lead;
 - **email**: E-Mail do consumidor que gerou o lead;
 - **ddd**: DDD do telefone do consumidor que gerou o lead Ex:`11`;
@@ -74,7 +74,7 @@ Onde:
 ### Observações Importantes:
 
 #### clientListingId
-O campo `clientListingId` é único identificador do anúncio/empreendimento conhecido pelo Software/CRM e GrupoZap, este identificador chega até nós via carga Feeds como codigo externo (externalId) ou customizado diretamente nos Software/CRM pelo cliente. Considere este identificador para realizar a devida associação do lead com o anúncio/empreendimento do cliente. Caso este identificador não estiver contído na requisição, deverá retornar o statusCode da família 400 (4xx) para ser analisado e reprocessado futuramente.
+O campo `clientListingId` é único identificador do anúncio/empreendimento conhecido pelo Software/CRM e GrupoZap, este identificador chega até nós via carga Feeds como codigo da listing (ListingId) ou customizado diretamente nos Software/CRM pelo cliente. Considere este identificador para realizar a devida associação do lead com o anúncio/empreendimento do cliente. Caso este identificador não estiver contído na requisição, deverá retornar o statusCode da família 400 (4xx) para ser analisado e reprocessado futuramente.
 
 ### Integração Inexistente
 Quando um cliente deixa de usar um CRM que tem integração de leads ativa com o Grupo Zap, CRM poderá retornar `StatusCode=404` na resposta da integração, desta forma, nosso sistema irá identificar integrações inexistentes e remover de nossos cadastros evitanto futuras requisições.
