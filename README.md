@@ -80,7 +80,7 @@ O campo `clientListingId` é único identificador do anúncio/empreendimento con
 Quando um cliente deixa de usar um CRM que tem integração de leads ativa com o Grupo Zap, CRM poderá retornar `StatusCode=404` na resposta da integração, desta forma, nosso sistema irá identificar integrações inexistentes e remover de nossos cadastros evitanto futuras requisições.
 
 ### Timeout
-A requisição POST para o endpoint está configurada com timeout de 5 segundos, ou seja, qualquer requisição que demorar mais que 5 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de retentativas.
+A requisição POST para o endpoint está configurada com timeout de 15 segundos, ou seja, qualquer requisição que demorar mais que 15 segundos será considerada ERRO sendo reenviadas de acordo com nossas regras de retentativas.
 
 ### Segurança
 Para verificar a confiabilidade do emissor das requisições, será enviado no Header uma chave de segurança no padrão [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). A chave a ser verificada será no seguinte formato:
