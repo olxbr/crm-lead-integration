@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.63.0"
+uvicorn = "==0.11.8"
+requests = "==2.25.1"
+pydantic = "==1.7.2"
+dataclasses-json = "==0.5.2"
+starlette = "==0.13.6"
+
+
+[dev-packages]
+flake8 = "==3.8.3"
+pytest = "==6.0.1"
+pytest-cov = "==2.10.0"
+bandit = "==1.6.2"
+
+
+[requires]
+python_version = "3.8"

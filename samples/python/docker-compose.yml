@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  lead-integration-python:
+    tty: true
+    image: "crm-lead-integration/python-sample"
+    stdin_open: true
+    build:
+      context: .
+      target: "development"
+    volumes:
+      - ".:/app"
+    env_file: 
+      - ".env"
+    ports:
+      - "8001:8001"
