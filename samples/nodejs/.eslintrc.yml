@@ -1,0 +1,7 @@
+extends: "airbnb-base"
+env:
+  node: true
+rules:
+  no-param-reassign: 0
+  no-plusplus:
+    - off
