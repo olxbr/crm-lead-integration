@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  lead-integration-nodejs:
+    tty: true
+    image: "crm-lead-integration/nodejs-sample"
+    stdin_open: true
+    build:
+      context: .
+    volumes:
+      - ".:/src"
+    environment:
+      - NODE_ENV=test
+    ports:
+      - "3334:3334"
