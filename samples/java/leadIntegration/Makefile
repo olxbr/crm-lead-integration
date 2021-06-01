@@ -6,6 +6,7 @@ deploy:
 	@make docker/run
 
 docker/build:
+	@make local/build
 	docker build --build-arg JAR_FILE=target/*.jar -t crm-lead-integration/java-sample --no-cache .
 
 docker/run:
