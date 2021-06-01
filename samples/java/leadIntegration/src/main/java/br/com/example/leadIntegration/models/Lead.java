@@ -1,10 +1,14 @@
 package br.com.example.leadIntegration.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Lead {
     private String leadOrigin;
     private String timestamp;
