@@ -16,9 +16,6 @@ import org.springframework.http.ResponseEntity;
 import java.net.URI;
 import java.util.Base64;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class LeadIntegrationApplicationTests {
 
@@ -45,8 +42,6 @@ class LeadIntegrationApplicationTests {
 		Assert.assertEquals(200, result.getStatusCodeValue());
 		Assert.assertEquals("{\"message\": \"OK\"}", result.getBody());
 
-//		assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/leads/health-check",
-//				String.class)).contains("{\"message\" : \"Ok\"}");
 	}
 
 	@Test
@@ -69,7 +64,6 @@ class LeadIntegrationApplicationTests {
 
 		ResponseEntity<String> result = this.restTemplate.postForEntity(uri, request, String.class);
 
-		//Verify request succeed
 		Assert.assertEquals(200, result.getStatusCodeValue());
 		Assert.assertEquals("{\"message\": \"Lead successfully received\"}", result.getBody());
 
@@ -92,7 +86,6 @@ class LeadIntegrationApplicationTests {
 
 		ResponseEntity<String> result = this.restTemplate.postForEntity(uri, request, String.class);
 
-		//Verify request succeed
 		Assert.assertEquals(401, result.getStatusCodeValue());
 	}
 }
