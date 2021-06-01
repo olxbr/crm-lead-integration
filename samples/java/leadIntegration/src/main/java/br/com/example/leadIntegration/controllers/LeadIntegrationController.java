@@ -12,7 +12,7 @@ public class LeadIntegrationController {
         return "{\"message\" : \"Ok\"}";
     }
 
-    @PostMapping("lead")
+    @PostMapping("/lead")
     public String lead(@RequestBody Lead lead){
         return "{\"message\": \"Lead successfully received\"}";
     }
