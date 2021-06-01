@@ -20,6 +20,10 @@ git clone https://github.com/olxbr/crm-lead-integration.git
 cd samples/java
 ```
 
+### Setting SECRET_KEY
+
+Change `SECRET_KEY` valeu in [application.properties](src/main/resources/application.properties) file
+
 ### Build
 
 - Local build execute:
