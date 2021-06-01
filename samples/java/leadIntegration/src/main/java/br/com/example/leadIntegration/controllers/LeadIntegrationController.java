@@ -9,7 +9,7 @@ public class LeadIntegrationController {
 
     @GetMapping("/health-check")
     public String healthCheck() {
-        return "{\"message\" : \"Ok\"}";
+        return "{\"message\": \"OK\"}";
     }
 
     @PostMapping("/lead")
