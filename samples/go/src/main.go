@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 
 	"leadIntegration/src/controllers"
@@ -18,6 +19,9 @@ func main() {
 
 	router.HandleFunc("/", homeLink)
 	router.HandleFunc("/health-check", controllers.HealthCheck).Methods("GET")
+	router.HandleFunc("/leads/lead", controllers.RecieveLead).Methods("POST")
+
+	log.Print("Server up on port: 8000")
 
 	err := http.ListenAndServe(":8000", router)
 	if err != nil {
