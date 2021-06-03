@@ -25,6 +25,5 @@ var RecieveLead = func(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println(lead.Name)
 	utils.Message(w, "Lead successfully received")
 }
