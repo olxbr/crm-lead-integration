@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 
+	"leadIntegration/src/auth"
 	"leadIntegration/src/controllers"
 
 	"github.com/gorilla/mux"
@@ -16,6 +17,8 @@ func homeLink(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	router := mux.NewRouter()
+
+	router.Use(auth.BasicAuthentication)
 
 	router.HandleFunc("/", homeLink)
 	router.HandleFunc("/health-check", controllers.HealthCheck).Methods("GET")
