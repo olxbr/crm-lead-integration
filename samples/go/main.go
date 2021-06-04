@@ -9,18 +9,17 @@ import (
 	"leadIntegration/src/controllers"
 
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 )
 
-func homeLink(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome home!")
-}
-
 func main() {
+
+	godotenv.Load()
+
 	router := mux.NewRouter()
 
 	router.Use(auth.BasicAuthentication)
 
-	router.HandleFunc("/", homeLink)
 	router.HandleFunc("/health-check", controllers.HealthCheck).Methods("GET")
 	router.HandleFunc("/leads/lead", controllers.RecieveLead).Methods("POST")
 
