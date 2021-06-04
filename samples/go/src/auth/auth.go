@@ -43,5 +43,6 @@ var BasicAuthentication = func(next http.Handler) http.Handler {
 			return
 		}
 
+		next.ServeHTTP(w, r)
 	})
 }
