@@ -10,7 +10,7 @@ import (
 )
 
 var HealthCheck = func(w http.ResponseWriter, r *http.Request) {
-	utils.Message(w, "OK")
+	utils.Respond(w, "OK")
 }
 
 var RecieveLead = func(w http.ResponseWriter, r *http.Request) {
@@ -21,9 +21,9 @@ var RecieveLead = func(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 		w.WriteHeader(http.StatusBadRequest)
-		utils.Message(w, "Request Invalido")
+		utils.Respond(w, "Invalid request")
 		return
 	}
 
-	utils.Message(w, "Lead successfully received")
+	utils.Respond(w, "Lead successfully received")
 }
