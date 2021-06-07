@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 
 
 @Configuration
@@ -18,7 +19,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			    .authorizeRequests()
                 .antMatchers( "/leads/health-check").permitAll()
                 .anyRequest().authenticated()
-                .and().httpBasic();
+                .and().httpBasic()
+                .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
 }
