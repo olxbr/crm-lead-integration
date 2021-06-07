@@ -22,7 +22,7 @@ cd samples/java
 
 ### Setting SECRET_KEY
 
-Change `SECRET_KEY` valeu in [application.properties](src/main/resources/application.properties) file
+Change `SECRET_KEY` value in [application.properties](src/main/resources/application.properties) file
 
 ### Build
 
