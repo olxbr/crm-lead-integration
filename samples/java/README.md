@@ -1,5 +1,7 @@
 # Lead Integration - Java
 
+[Portuguese version](README-ptbr.md)
+
 A basic sample using Java to show how to receive leads from zap+.
 
 Please, check out our [docs](https://developers.grupozap.com/) for more information.
@@ -44,13 +46,6 @@ make local/run
 - Docker run execute:
 ``` shell
 make docker/run
-```
-
-### Deploy
-
-- Execute the following command to deploy:
-``` shell
-make deploy
 ```
 
 **Helpful commands**
