@@ -10,6 +10,7 @@ Please, check out our [docs](https://developers.grupozap.com/) for more informat
 
 - [Java 11](https://openjdk.java.net/projects/jdk/11/)
 - [Maven 3.8.1](https://maven.apache.org/)
+- [Gradle 7.0.2](https://gradle.org/)
 - [Spring Boot 2.5.0](https://spring.io/projects/spring-boot)
 - [Lombok 1.18.20](https://projectlombok.org/features/all)  
 - [Docker](https://www.docker.com/get-started)
@@ -29,9 +30,13 @@ Change `SECRET_KEY` value in [application.properties](src/main/resources/applica
 
 ### Build
 
-- Local build execute:
+- Maven local build execute:
 ``` shell
-make local/build
+make maven/build
+```
+- Gradle local build execute:
+``` shell
+make gradle/build
 ```
 - Docker build execute:
 ``` shell
@@ -40,9 +45,13 @@ make docker/build
 
 ### Running 
 
-- Local run execute:
+- Maven local run execute:
 ``` shell
-make local/run
+make maven/run
+```
+- Gradle local run execute:
+``` shell
+make gradle/run
 ```
 - Docker run execute:
 ``` shell

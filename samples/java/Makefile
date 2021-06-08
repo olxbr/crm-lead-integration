@@ -16,17 +16,29 @@ docker/stop:
 	docker container stop lead-integration-java
 	docker container rm lead-integration-java
 
-local/build:
+maven/build:
 	./mvnw package
 
-local/run:
-	java -jar target/leadIntegration-0.0.1.jar
-
-local/setup:
+maven/setup:
 	./mvnw install
 
-local/clean:
+maven/clean:
 	./mvnw clean
 
-local/test:
+maven/test:
 	./mvnw test
+
+maven/run:
+	java -jar target/lead-integration-0.0.1.jar
+
+gradle/build:
+	./gradlew build
+
+gradle/clean:
+	./gradlew clean
+
+gradle/test:
+	./gradlew test
+
+gradle/run:
+	java -jar build/libs/lead-integration-0.0.1.jar
