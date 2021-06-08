@@ -20,7 +20,7 @@ local/build:
 	./mvnw package
 
 local/run:
-	java -jar target/leadIntegration-0.0.1-SNAPSHOT.jar
+	java -jar target/leadIntegration-0.0.1.jar
 
 local/setup:
 	./mvnw install
