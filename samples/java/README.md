@@ -11,7 +11,7 @@ Please, check out our [docs](https://developers.grupozap.com/) for more informat
 - [Java 11](https://openjdk.java.net/projects/jdk/11/)
 - [Maven 3.8.1](https://maven.apache.org/)
 - [Spring Boot 2.5.0](https://spring.io/projects/spring-boot)
-- [Lombock 1.18.20](https://projectlombok.org/features/all)  
+- [Lombok 1.18.20](https://projectlombok.org/features/all)  
 - [Docker](https://www.docker.com/get-started)
 
 ## How to install
