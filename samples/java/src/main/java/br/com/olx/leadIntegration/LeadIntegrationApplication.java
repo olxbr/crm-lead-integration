@@ -1,4 +1,4 @@
-package br.com.example.leadIntegration;
+package br.com.olx.leadIntegration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
