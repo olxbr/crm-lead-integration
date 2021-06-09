@@ -1,3 +1,6 @@
+local/clean:
+	rm -rf bin
+
 local/build:
 	go build -o bin/leadIntegration;
 
@@ -9,6 +12,9 @@ local/run:
 
 local/setup:
 	go get
+
+bin/run:
+	bin/leadIntegration
 
 docker/build:
 	@make local/build
