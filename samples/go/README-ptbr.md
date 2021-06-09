@@ -1,50 +1,50 @@
 # Lead Integration - Go
 
-[Portuguese version](README-ptbr.md)
+[English version](README.md)
 
-A basic sample using Go to show how to receive leads from zap+.
+Um simples projeto usando Go para demonstrar como receber leads do zap+.
 
-Please, check out our [docs](https://developers.grupozap.com/) for more information.
+Por favor, confira nossa [documentação](https://developers.grupozap.com/) para mais informações.
 
-## Technology and Resources
+## Recursos Utilizados
 
 - [Go 1.16.4](https://golang.org/)
 - [Gorilla Mux 1.8.0](https://github.com/gorilla/mux)
 - [Joho GoDotEnv 1.3.0](https://github.com/joho/godotenv)
 - [Docker](https://www.docker.com/get-started)
 
-## How to install
+## Como instalar
 
-### Cloning
+### Clonando
 
 ``` shell
 git clone https://github.com/olxbr/crm-lead-integration.git
 cd samples/go
 ```
 
-### Setting SECRET_KEY
+### Configurando SECRET_KEY
 
-- Change `SECRET_KEY` valeu in [.env.example](.env.example) file
-- Rename `.env.example` file to `.env`
+- Modifique o valor de `SECRET_KEY` no arquivo [.env.example](.env.example)
+- Renomeie o arquivo `.env.example` para `.env`
 
 ### Build
 
-- Local build execute:
+- Para executar uma build local:
 ``` shell
 make local/build
 ```
-- Docker build execute:
+- Para executar uma build do Docker:
 ``` shell
 make docker/build
 ```
 
-### Running 
+### Executando 
 
-- Local run execute:
+- Para executar localmente:
 ``` shell
 make local/run
 ```
-- Docker run execute:
+- Para executar utilizando Docker:
 ``` shell
 make docker/run
 ```
