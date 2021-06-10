@@ -8,15 +8,7 @@ import (
 )
 
 func ValidAuthorization(user string, secretKey string) bool {
-
-	if secretKey == "" ||
-		user == "" ||
-		secretKey != os.Getenv("SECRET_KEY") ||
-		user != "vivareal" {
-		return false
-	}
-
-	return true
+	return user == "vivareal" && secretKey == os.Getenv("SECRET_KEY")
 }
 
 var BasicAuthentication = func(next http.Handler) http.Handler {
