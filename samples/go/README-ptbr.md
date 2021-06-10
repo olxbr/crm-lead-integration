@@ -8,9 +8,9 @@ Por favor, confira nossa [documentação](https://developers.grupozap.com/) para
 
 ## Recursos Utilizados
 
-- [Go 1.16.4](https://golang.org/)
-- [Gorilla Mux 1.8.0](https://github.com/gorilla/mux)
-- [Joho GoDotEnv 1.3.0](https://github.com/joho/godotenv)
+- [Go 1.16](https://golang.org/)
+- [Gorilla Mux 1.8](https://github.com/gorilla/mux)
+- [Joho GoDotEnv 1.3](https://github.com/joho/godotenv)
 - [Docker](https://www.docker.com/get-started)
 
 ## Como instalar
@@ -24,8 +24,8 @@ cd samples/go
 
 ### Configurando SECRET_KEY
 
-- Modifique o valor de `SECRET_KEY` no arquivo [.env.example](.env.example)
-- Renomeie o arquivo `.env.example` para `.env`
+- Copie o arquivo `.env.example` e  renomeie para `.env`
+- Modifique o valor de `SECRET_KEY` no arquivo `.env`
 
 ### Build
 
