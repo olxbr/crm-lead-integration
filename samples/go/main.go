@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -14,7 +13,10 @@ import (
 
 func main() {
 
-	godotenv.Load()
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf(err.Error())
+	}
 
 	router := mux.NewRouter()
 
@@ -24,9 +26,5 @@ func main() {
 	router.HandleFunc("/leads/lead", controllers.RecieveLead).Methods("POST")
 
 	log.Print("Server up on port: 8000")
-
-	err := http.ListenAndServe(":8000", router)
-	if err != nil {
-		fmt.Println(err)
-	}
+	log.Fatal(http.ListenAndServe(":8000", router))
 }

@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"log"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -10,6 +11,8 @@ import (
 
 	"leadIntegration/src/auth"
 	"leadIntegration/src/controllers"
+
+	"github.com/joho/godotenv"
 )
 
 func TestHealthCheck(t *testing.T) {
@@ -37,6 +40,11 @@ func TestHealthCheck(t *testing.T) {
 }
 
 func TestRecieveLead(t *testing.T) {
+
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
 
 	requestBody, err := json.Marshal(map[string]string{
 		"leadOrigin":      "VivaReal",
@@ -83,6 +91,11 @@ func TestRecieveLead(t *testing.T) {
 
 func TestWrongAuthorization(t *testing.T) {
 
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
 	requestBody, err := json.Marshal(map[string]string{
 		"leadOrigin":      "VivaReal",
 		"timestamp":       "2017-10-23T15:50:30.619Z",
@@ -111,7 +124,7 @@ func TestWrongAuthorization(t *testing.T) {
 	user, secretKey, _ := req.BasicAuth()
 
 	if auth.ValidAuthorization(user, secretKey) {
-		t.Errorf("handler returned wrong authorization")
+		t.Errorf("handler returned right authorization")
 	}
 
 }
