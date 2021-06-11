@@ -9,7 +9,6 @@ import (
 	"os"
 	"testing"
 
-	"leadIntegration/src/auth"
 	"leadIntegration/src/controllers"
 
 	"github.com/joho/godotenv"
@@ -114,12 +113,6 @@ func TestRecieveLead(t *testing.T) {
 
 			handler.ServeHTTP(rr, req)
 
-			user, secretKey, _ := req.BasicAuth()
-
-			if !auth.ValidAuthorization(user, secretKey) {
-				t.Errorf("handler returned wrong authorization")
-			}
-
 			if status := rr.Code; status != http.StatusOK {
 				t.Errorf("handler returned wrong status code: got %v want %v",
 					status, http.StatusOK)
@@ -157,11 +150,12 @@ func TestWrongAuthorization(t *testing.T) {
 
 			handler.ServeHTTP(rr, req)
 
-			user, secretKey, _ := req.BasicAuth()
-
-			if auth.ValidAuthorization(user, secretKey) {
-				t.Errorf("handler returned right authorization")
+			expected := `{"message": "Authorization header invalid"}`
+			if rr.Body.String() != expected {
+				t.Errorf("handler returned unexpected body: got %v want %v",
+					rr.Body.String(), expected)
 			}
+
 		})
 	}
 }

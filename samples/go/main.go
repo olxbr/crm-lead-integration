@@ -4,7 +4,6 @@ import (
 	"log"
 	"net/http"
 
-	"leadIntegration/src/auth"
 	"leadIntegration/src/controllers"
 
 	"github.com/gorilla/mux"
@@ -19,8 +18,6 @@ func main() {
 	}
 
 	router := mux.NewRouter()
-
-	router.Use(auth.BasicAuthentication)
 
 	router.HandleFunc("/health-check", controllers.HealthCheck).Methods("GET")
 	router.HandleFunc("/leads/lead", controllers.RecieveLead).Methods("POST")
