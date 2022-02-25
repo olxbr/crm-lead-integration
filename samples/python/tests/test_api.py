@@ -37,6 +37,6 @@ class ApiTest(TestCase):
         self.assertEqual(response.status_code, 401)
 
     def test_when_I_call_lead_using_a_right_credential_should_be_success(self):
-        self.monkeypatch.setenv("SECRET_KEY", "***REMOVED***")
-        response = self.client_api.post("/lead", json=self.lead_request_model.dict(), headers={"Authorization": "***REMOVED***"})
+        self.monkeypatch.setenv("SECRET_KEY", "XXXXXXXXXXXXXXXXX")
+        response = self.client_api.post("/lead", json=self.lead_request_model.dict(), headers={"Authorization": "dml2YXJlYWw6WFhYWFhYWFhYWFhYWFhYWFg="})
         self.assertEqual(response.status_code, 200)

@@ -3,9 +3,9 @@ const leadRouter = require('../../../src/routes/lead')
 const request = require('supertest');
 const express = require('express');
 
-const { lead } = require('../../fixtures/fixtures')
+const { lead } = require('../../fixtures/fixtures');
 
-const authorizationHash = '***REMOVED***';
+const authorizationHash = 'dml2YXJlYWw6WFhYWFhYWFhYWFhYWFhYWFg=';
 
 const app = express();
 app.use(leadRouter);
@@ -14,7 +14,7 @@ const env = Object.assign({}, process.env);
 
 after(() => {
   process.env = env;
-  process.env.SECRET_KEY = '***REMOVED***';
+  process.env.SECRET_KEY = 'XXXXXXXXXXXXXXXXX';
 });
 
 describe('POST /lead', () => {
