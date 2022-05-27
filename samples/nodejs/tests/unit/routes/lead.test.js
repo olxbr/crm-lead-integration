@@ -5,7 +5,7 @@ const express = require('express');
 
 const { lead } = require('../../fixtures/fixtures');
 
-const authorizationHash = 'dml2YXJlYWw6WFhYWFhYWFhYWFhYWFhYWFg=';
+const authorizationHash = 'XXXXXXXXXXXXXXXXX';
 
 const app = express();
 app.use(leadRouter);
