@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "crm-lead-integration"
+  description: "boilerplate para terceiros fazerem integracoes"
+  annotations:
+    github.com/project-slug: 'olxbr/crm-lead-integration'
+    backstage.io/techdocs-ref: dir:.
+    graph.microsoft.com/group-id: b5e0d8e7-d39c-48d6-b1c1-556abf9aa63c
+    teams.olxbr.io/cloud-cost-center: 181049f8-b5d9-4a91-98e1-fce85f5a4b8b
+    olxbr.io/critical: 'false'
+    olxbr.io/dora: olx-integrations
+    sonarqube.org/project-key: olxbr_crm-lead-integration
+    olxbr.io/bcp-ready: 'false'
+  tags:
+    - do-olx-integrations
+    - dj-ic
+  links:
+    - url: 'https://olxbrasil.slack.com/archives/C04670X6YF2'
+      title: '#slack-channel'
+      icon: chat
+      type: api
+spec:
+  type: library
+  owner: group:default/squad-olx-integrations
+  lifecycle: production
