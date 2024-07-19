@@ -6,15 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running build and test for ${{ github.ref }} branch"
-      - name: Check out repository code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-      - name: Installing dependencies
-        run: make install
 
       - name: Quality Gate - Unit Test
         run: true
