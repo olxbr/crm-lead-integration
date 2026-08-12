@@ -8,4 +8,4 @@ jobs:
       - run: echo "Running build and test for ${{ github.ref }} branch"
 
       - name: Quality Gate - Unit Test
-        run: true
+        run: false
