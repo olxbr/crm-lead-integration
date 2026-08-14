@@ -15,7 +15,7 @@
 	<description>Sample for Lead Integration</description>
 	<properties>
 		<java.version>11</java.version>
-        <tomcat.version>9.0.99</tomcat.version>
+		<tomcat.version>9.0.99</tomcat.version>
 	</properties>
 	<dependencies>
 		<dependency>
