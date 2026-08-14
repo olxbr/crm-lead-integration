@@ -17,6 +17,10 @@ repositories {
     }
 }
 
+ext {
+    set('tomcat.version', '9.0.99')
+}
+
 
 
 dependencies {
