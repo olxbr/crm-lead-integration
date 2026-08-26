@@ -6,14 +6,14 @@ metadata:
   annotations:
     github.com/project-slug: 'olxbr/crm-lead-integration'
     backstage.io/techdocs-ref: dir:.
-    graph.microsoft.com/group-id: b5e0d8e7-d39c-48d6-b1c1-556abf9aa63c
-    teams.olxbr.io/cloud-cost-center: 181049f8-b5d9-4a91-98e1-fce85f5a4b8b
+    graph.microsoft.com/group-id: 6f449bce-ebc8-41bb-89b5-b965014a592c
+    teams.olxbr.io/cloud-cost-center: 24b102ae-bb4c-46a8-b466-ccaa5863e49e
     olxbr.io/critical: 'false'
-    olxbr.io/dora: olx-integrations
+    olxbr.io/dora: squad-olx-ads-experience
     sonarqube.org/project-key: olxbr_crm-lead-integration
     olxbr.io/bcp-ready: 'false'
   tags:
-    - do-olx-integrations
+    - do-do-squad-atributos-e-seguranca
     - dj-ic
   links:
     - url: 'https://olxbrasil.slack.com/archives/C04670X6YF2'
