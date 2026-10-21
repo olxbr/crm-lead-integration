@@ -3,7 +3,7 @@
  */
 
 plugins {
-    id 'org.springframework.boot' version '2.6.6'
+    id 'org.springframework.boot' version '2.7.18'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'maven-publish'
@@ -18,6 +18,15 @@ repositories {
 }
 
 
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'org.springframework.security') {
+            details.useVersion '5.7.13'
+            details.because 'CVE-2024-38821: force spring-security to 5.7.13'
+        }
+    }
+}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
