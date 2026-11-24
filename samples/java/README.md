@@ -8,11 +8,11 @@ Please, check out our [docs](https://developers.grupozap.com/) for more informat
 
 ## Technology and Resources
 
-- [Java 11](https://openjdk.java.net/projects/jdk/11/)
+- [Java 17](https://openjdk.java.net/projects/jdk/17/)
 - [Maven 3.8.1](https://maven.apache.org/)
-- [Gradle 7.0.2](https://gradle.org/)
-- [Spring Boot 2.5.0](https://spring.io/projects/spring-boot)
-- [Lombok 1.18.20](https://projectlombok.org/features/all)  
+- [Gradle 8.14.8](https://gradle.org/)
+- [Spring Boot 3.5.16](https://spring.io/projects/spring-boot)
+- [Lombok 1.18.46](https://projectlombok.org/features/all)  
 - [Docker](https://www.docker.com/get-started)
 
 ## How to install
